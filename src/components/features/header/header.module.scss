@@ -1,0 +1,72 @@
+@import '../../../styles/scss/modules/var';
+@import '../../../styles/scss/modules/mixins';
+
+.header_container{
+  background-color: $white;
+  transition: ease-in-out .2s;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  min-height: 89px;
+  left: 0;
+  z-index: 2;
+
+  .logo {
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .profile {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+    }
+  }
+
+  .darkInput {
+    @include media('mobile') {
+      display: none;
+    }
+  }
+}
+
+
+.menu {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem ;
+  }
+}
+
+.position_menu {
+  right: 0px;
+}
+
+.menuSession {
+  border-radius: 0.5rem;
+  background-color: $white;
+  box-shadow: 0 10px 30px rgba(80,71,65,.2);
+  padding: 1rem;
+
+  button {
+    background: none;
+    border: 1px solid $green;
+    color: $green;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}

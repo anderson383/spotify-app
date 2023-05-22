@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in Artist component Should render the component 1`] = `
+<DocumentFragment>
+  <header
+    class="header_container"
+  >
+    <div
+      class="header  container"
+    >
+      <div
+        class="logo"
+        data-testid="logo"
+      >
+        <img
+          alt="Logo constructora bolivar"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/img/logo-bolivar.svg"
+          style="color: transparent;"
+          width="100"
+        />
+        <img
+          alt="Logo constructora bolivar"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/img/spotify-logo.svg"
+          style="color: transparent;"
+          width="100"
+        />
+      </div>
+      <nav
+        class="menu"
+      >
+        <form>
+          <div
+            class=""
+          >
+            <div
+              class="content"
+            >
+              <img
+                src="/img/search-icon.svg"
+                width="25"
+              />
+              <input
+                class="input inputSearch"
+                name="search"
+                placeholder="Buscar"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="content"
+          >
+            <span
+              class="profile"
+              data-testid="img_butt"
+            >
+              <img
+                alt=""
+                src="image test"
+              />
+            </span>
+            <div
+              aria-labelledby="menu-button"
+              aria-orientation="vertical"
+              class="false position_menu activator"
+              role="menu"
+            >
+              <div
+                class="menuSession"
+              >
+                <button
+                  type="button"
+                >
+                  Cerrar sesión
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            data-testid="search"
+            style="display: none;"
+            type="submit"
+          />
+        </form>
+      </nav>
+    </div>
+  </header>
+</DocumentFragment>
+`;

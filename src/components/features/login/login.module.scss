@@ -1,0 +1,47 @@
+@import '../../../styles/scss/modules/var';
+@import '../../../styles/scss/modules/mixins';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  .login_container {
+    display: flex;
+    width: 100%;
+    background-color: $white;
+    min-height: 40rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(80,71,65,.2);
+
+
+    .image {
+      display: flex;
+      background-color: $green-2;
+      flex: 2;
+      justify-content: center;
+      position: relative;
+    }
+
+    .logo_spotify {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    .form {
+      padding: 2rem;
+      flex: 1;
+
+      button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: .5rem;
+        border: 1px solid $green-2;
+        color: $green;
+      }
+    }
+  }
+}

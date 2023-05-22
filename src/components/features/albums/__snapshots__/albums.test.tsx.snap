@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in Albums component Should render the component 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="container"
+    >
+      <h2
+        class="title"
+      >
+        Albums
+      </h2>
+      <div
+        class="container-albums"
+      >
+        <div
+          class="album"
+        >
+          <img
+            alt="Albums de prueba"
+            src="url test"
+            width="100%"
+          />
+          <a
+            href=""
+            target="_blank"
+          >
+            Albums de prueba
+          </a>
+          <div
+            class="artists"
+          >
+            <p>
+              Artista
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Tests in Albums component Should render the component if not pass the prop albums 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="container"
+    />
+  </section>
+</DocumentFragment>
+`;

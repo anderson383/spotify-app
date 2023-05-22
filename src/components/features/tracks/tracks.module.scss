@@ -1,0 +1,73 @@
+@import '../../../styles/scss/modules/var';
+@import '../../../styles/scss/modules/mixins';
+
+.container-albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.album {
+  background-color: $white;
+  min-height: 70px;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(80,71,65,.2);
+
+  p {
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.artists {
+  display: flex;
+  gap: 16px;
+
+  p {
+    font-size: 12px;
+    color: gray;
+    &::after {
+      content: ',';
+    }
+    &:last-child {
+      &::after {
+        content: '.';
+      }
+    }
+  }
+}
+
+.content_trak {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {
+    font-size: 10px;
+    margin-right: 8px;
+  }
+}
+
+.audio {
+  height: 20px;
+  width: 100%;
+
+  &::-webkit-media-controls-current-time-display {
+    display: none;
+  }
+
+  &::-webkit-media-controls-time-remaining-display {
+    display: none;
+  }
+
+  &::-webkit-media-controls-panel {
+    border-radius: 1px;
+    color: aqua !important;
+    background-color: $white;
+  }
+}

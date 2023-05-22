@@ -1,0 +1,44 @@
+
+@import '../../../styles/scss/modules/var';
+@import '../../../styles/scss/modules/mixins';
+
+.container-artist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, .2fr));
+  gap: 2rem;
+}
+
+.title {
+  margin: 2rem 0 !important;
+}
+
+.artist {
+  background-color: $white;
+  min-height: 200px;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(80,71,65,.2);
+
+  p, a {
+    flex: 1;
+    text-decoration: none;
+    color: $green;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: $green-2;
+  }
+
+  .followers {
+    // flex: 1;
+    p {
+      font-size: 12px;
+      color: #9b9b9b;
+    }
+  }
+}

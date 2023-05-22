@@ -1,0 +1,33 @@
+@import '../modules/var';
+
+* {
+  font-family: $fjalla-one;
+}
+
+.link-1 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+h1 {
+  font-size: 3rem !important;
+  color: $white;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: $green;
+}
+
+span {
+  font-weight: normal;  
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}

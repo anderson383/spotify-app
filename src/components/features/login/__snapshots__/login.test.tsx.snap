@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in Traks component Should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="container container"
+  >
+    <div
+      class="login_container"
+    >
+      <div
+        class="image"
+      >
+        <img
+          alt=""
+          src="/img/logo-bolivar-yellow.svg"
+          width="500"
+        />
+        <img
+          alt=""
+          class="logo_spotify"
+          src="/img/spotify-logo.svg"
+          width="150"
+        />
+      </div>
+      <div
+        class="form"
+      >
+        <h2>
+          ¡Bienvenido de nuevo!
+        </h2>
+        <button>
+          Sign in with spotify
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

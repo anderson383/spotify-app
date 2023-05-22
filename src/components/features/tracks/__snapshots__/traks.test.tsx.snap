@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in Traks component Should render if not pass props 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="container"
+    />
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Tests in Traks component Should render the component 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="container"
+    >
+      <h2>
+        Canciones
+      </h2>
+      <div
+        class="container-albums"
+      >
+        <div
+          class="album"
+        >
+          <img
+            alt="Albums de prueba"
+            height="70px"
+            src="url test"
+            width="70px"
+          />
+          <div
+            class="content_trak"
+          >
+            <div
+              class=""
+            >
+              <p>
+                 Albums de prueba
+              </p>
+              <span>
+                Artista
+              </span>
+            </div>
+            <div
+              class="artists"
+            >
+              <audio
+                class="audio"
+                controls=""
+              >
+                <source
+                  src="url"
+                  type="audio/mp3"
+                />
+                Tu navegador no soporta audio HTML5.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

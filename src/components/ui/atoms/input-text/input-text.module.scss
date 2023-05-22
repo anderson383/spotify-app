@@ -1,0 +1,33 @@
+@import '../../../../styles/scss/modules/var';
+@import '../../../../styles/scss/modules/mixins';
+
+.content {
+  position: relative;
+  .input {
+    padding: 1rem;
+    min-width: 350px;
+    border-radius: 1rem;
+    border: none;
+    background-color: $white-bg;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+
+  .inputSearch {
+    padding-left: 3.5rem;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 1rem ;
+  }
+
+  .input:focus {
+    outline: none !important;
+    border: 2px solid $green;
+  }
+}
+

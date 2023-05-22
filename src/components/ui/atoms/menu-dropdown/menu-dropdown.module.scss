@@ -1,0 +1,13 @@
+
+.content { 
+  position: relative;
+
+  .activator {
+    position: absolute;
+    width: max-content;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
