@@ -17,7 +17,7 @@ const Login:React.FC<LoginProps> = ({
         <div className={styles.form}>
           <h2>¡Bienvenido de nuevo!</h2>
           <button onClick={() => signIn(id)}>
-              Sign in with {name}
+              Iniciar sesión con {name}
           </button>
         </div>
       </div>

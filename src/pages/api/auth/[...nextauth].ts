@@ -1,6 +1,8 @@
 import { AuthOptions } from 'next-auth';
+import getConfig from 'next/config';
 import NextAuth from 'next-auth/next';
 import SpotifyProvider from 'next-auth/providers/spotify';
+const { publicRuntimeConfig } = getConfig();
 
 export const authOptions:AuthOptions = {
 
@@ -26,8 +28,8 @@ export const authOptions:AuthOptions = {
   pages: {signIn: '/auth/signin'},
   providers: [
     SpotifyProvider({
-      clientId: '07cc7aef36ae4f4a9415d3278cf7ffcd',
-      clientSecret: 'be7e8a49ff884794aca73947f0bc07bb'
+      clientId: publicRuntimeConfig.CLIENT_ID,
+      clientSecret: publicRuntimeConfig.CLIENTE_SECRET
     })
   ],
   session: {maxAge: 1800}
