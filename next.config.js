@@ -15,7 +15,7 @@ const nextConfig = {
     CF_DELIVERY_ACCESS_TOKEN: process.env.CF_DELIVERY_ACCESS_TOKEN,
     CF_ENVIRONMENT: process.env.CF_ENVIRONMENT,
     CF_SPACE_ID: process.env.CF_SPACE_ID,
-    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET
   },
   reactStrictMode: false
 };

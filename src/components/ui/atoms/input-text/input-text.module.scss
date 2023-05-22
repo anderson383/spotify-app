@@ -17,12 +17,16 @@
     padding-left: 3.5rem;
   }
 
-  img {
+  button {
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 0;
     left: 1rem ;
+    border: none;
+    background: transparent;
+    width: max-content;
+    height: max-content;
   }
 
   .input:focus {

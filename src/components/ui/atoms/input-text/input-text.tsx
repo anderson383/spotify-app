@@ -14,7 +14,9 @@ export const InputText:React.FC<InputTextProps> = ({
 
   return (
     <div className={styles.content}>
-      <img src='/img/search-icon.svg' width={25} />
+      <button data-testid="search" type='submit' >
+        <img src='/img/search-icon.svg' width={25} />
+      </button>
       <input
         name={name}
         className={`${ styles.input } ${ search ? styles.inputSearch : '' }`}

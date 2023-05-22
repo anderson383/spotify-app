@@ -10,12 +10,12 @@ describe('Test helper getParamsUrl', () => {
   test('Should return null if null value', () => {
     const params = getParamsUrl(null);
 
-    expect(params).toBe(null);
+    expect(params).toBe('');
   });
 
   test('Should error', () => {
     const params = getParamsUrl('esto no es una url');
 
-    expect(params).toBe(null);
+    expect(params).toBe('');
   });
 });

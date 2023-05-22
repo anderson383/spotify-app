@@ -43,10 +43,15 @@ exports[`Tests in Artist component Should render the component 1`] = `
             <div
               class="content"
             >
-              <img
-                src="/img/search-icon.svg"
-                width="25"
-              />
+              <button
+                data-testid="search"
+                type="submit"
+              >
+                <img
+                  src="/img/search-icon.svg"
+                  width="25"
+                />
+              </button>
               <input
                 class="input inputSearch"
                 name="search"
@@ -85,11 +90,6 @@ exports[`Tests in Artist component Should render the component 1`] = `
               </div>
             </div>
           </div>
-          <button
-            data-testid="search"
-            style="display: none;"
-            type="submit"
-          />
         </form>
       </nav>
     </div>

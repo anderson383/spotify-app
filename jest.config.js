@@ -13,7 +13,6 @@ module.exports = {
     lines: 85,
     statements: 85
   }},
-  globals: { 'ts-jest': { tsconfig: 'tsconfig.jest.json' } },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
     '\\.(svg)$': '<rootDir>/svg/svg-mock.js',
@@ -26,7 +25,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-  transform: {'^.+\\.(ts|tsx)$': 'ts-jest'},
+  transform: {'^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }]},
   unmockedModulePathPatterns: [
     '<rootDir>/node_modules/react',
     '<rootDir>/node_modules/contentful',

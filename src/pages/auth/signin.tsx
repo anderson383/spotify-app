@@ -10,7 +10,7 @@ export default function SignIn({ providers }: InferGetServerSidePropsType<typeof
   return (
     <>
       {Object.values(providers).map((provider:any) => (
-        <Login name={provider.name} id={provider.id} />
+        <Login name={provider.name} id={provider.id} key={provider.id} />
       ))}
     </>
   );

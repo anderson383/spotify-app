@@ -3,7 +3,7 @@ export const getParamsUrl = (param:string, url = typeof window === 'undefined' ?
   try {
     const urlInstance = new URL(url).searchParams;
 
-    return urlInstance.get(param);
+    return urlInstance.get(param) || '';
   } catch (e) {
     return '';
   }

@@ -30,7 +30,7 @@ export const authOptions:AuthOptions = {
       clientSecret: 'be7e8a49ff884794aca73947f0bc07bb'
     })
   ],
-  session: {maxAge: 1 * 60 * 60}
+  session: {maxAge: 1800}
 };
 
 export default NextAuth(authOptions);

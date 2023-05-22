@@ -10,6 +10,7 @@ import { MenuDropDown } from '@/components/ui/atoms/menu-dropdown/menu-dropdown'
 import styles from './header.module.scss';
 import { useRouter } from 'next/router';
 
+const DEFAULT_IMG = 'https://th.bing.com/th/id/OIP.PB3QCTk1kCZZ6ZvvVqpM5gHaHa?pid=ImgDet&rs=1';
 const Header = () => {
   const router = useRouter();
 
@@ -59,7 +60,7 @@ const Header = () => {
                       className={styles.position_menu}
                       activator={setOpenMenu => (
                         <span data-testid="img_butt" className={styles.profile} onClick={() => setOpenMenu()}>
-                          <img src={session.user.image} alt="" />
+                          <img src={session.user.image ? session.user.image : DEFAULT_IMG} alt="" />
                         </span>
                       )}
                     >
@@ -69,7 +70,7 @@ const Header = () => {
                         </button>
                       </div>
                     </MenuDropDown>
-                    <button data-testid="search" style={{display: 'none'}} type='submit'></button>
+                    {/* <button style={{display: 'none'}} ></button> */}
                   </form>
                 )}
               </Formik>

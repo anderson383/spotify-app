@@ -9,7 +9,7 @@ const Login:React.FC<LoginProps> = ({
 }) => {
   return (
     <div className={`container ${ styles.container }`}>
-      <div className={styles.login_container} key={name}>
+      <div className={styles.login_container} key={id}>
         <div className={styles.image}>
           <img src="/img/logo-bolivar-yellow.svg" alt="" width={500} />
           <img className={styles.logo_spotify} src="/img/spotify-logo.svg" alt="" width={150} />
