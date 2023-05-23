@@ -27,8 +27,6 @@ module.exports = {
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   transform: {'^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }]},
   unmockedModulePathPatterns: [
-    '<rootDir>/node_modules/react',
-    '<rootDir>/node_modules/contentful',
-    '<rootDir>/node_modules/next/document'
+    '<rootDir>/node_modules/react'
   ]
 };
